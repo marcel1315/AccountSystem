@@ -1,12 +1,10 @@
 package org.example.account.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.account.dto.CancelBalance;
 import org.example.account.dto.TransactionDto;
 import org.example.account.dto.UseBalance;
 import org.example.account.service.TransactionService;
-import org.example.account.type.TransactionResultType;
 import org.example.account.type.TransactionType;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +16,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.time.LocalDateTime;
 
 import static org.example.account.type.TransactionResultType.S;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

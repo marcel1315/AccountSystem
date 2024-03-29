@@ -5,9 +5,6 @@ import lombok.*;
 import org.example.account.exception.AccountException;
 import org.example.account.type.AccountStatus;
 import org.example.account.type.ErrorCode;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
