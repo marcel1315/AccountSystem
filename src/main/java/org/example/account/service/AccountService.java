@@ -83,7 +83,8 @@ public class AccountService {
         if (id < 0) {
             throw new AccountException(USER_NOT_FOUND);
         }
-        return accountRepository.findById(id).get();
+        return accountRepository.findById(id)
+                .orElseThrow(() -> new AccountException(ACCOUNT_NOT_FOUND));
     }
 
     @Transactional
