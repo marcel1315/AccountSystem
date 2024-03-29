@@ -3,12 +3,11 @@ package org.example.account.exception;
 import lombok.*;
 import org.example.account.type.ErrorCode;
 
-@Getter @Setter
-@AllArgsConstructor @NoArgsConstructor
-@Builder
+@Getter
+@AllArgsConstructor
 public class AccountException extends RuntimeException {
-    private ErrorCode errorCode;
-    private String errorMessage;
+    private final ErrorCode errorCode;
+    private final String errorMessage;
 
     public AccountException(ErrorCode errorCode) {
         this.errorCode = errorCode;
